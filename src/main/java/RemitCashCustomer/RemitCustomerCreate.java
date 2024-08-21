@@ -1,4 +1,4 @@
-package Exprimentes2;
+package RemitCashCustomer;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,10 +37,10 @@ public class RemitCustomerCreate {
 		mas.selectByIndex(2);
 		
 		//nric
-		driver.findElement(By.xpath("//input[@placeholder='Enter NRIC No']")).sendKeys("S7963120f");
+		driver.findElement(By.xpath("//input[@placeholder='Enter NRIC No']")).sendKeys("S7963120f1");
 		
 		//Name
-		driver.findElement(By.xpath("(//input[@placeholder='Enter Name'])[1]")).sendKeys("jayasri");
+		driver.findElement(By.xpath("(//input[@placeholder='Enter Name'])[1]")).sendKeys("KIMIKO");
 		
 //		//Screenshot
 //		TakesScreenshot shot=(TakesScreenshot)driver;

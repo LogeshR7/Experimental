@@ -84,12 +84,13 @@ public class Haniffiaakl {
 		driver.findElement(By.xpath("//a[text()=' Convert GRN ']" )).click();
 		
 		//Leave alert
-		Alert save=driver.switchTo().alert();
-		save.accept();
+		//Alert save=driver.switchTo().alert();
+		//save.accept();
+		//Thread.sleep(2000);
 		
 		//PGRn Reference number
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("//input[@name='reference_no']")).sendKeys("LOgesh Auto9");
+		driver.findElement(By.xpath("//input[@name='reference_no']")).sendKeys("LOgesh Auto82");
 		
 		//Pgrn save
 		Thread.sleep(2000);
