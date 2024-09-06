@@ -37,10 +37,10 @@ public class RemitCustomerCreate {
 		mas.selectByIndex(2);
 		
 		//nric
-		driver.findElement(By.xpath("//input[@placeholder='Enter NRIC No']")).sendKeys("S7963120f1");
+		driver.findElement(By.xpath("//input[@placeholder='Enter NRIC No']")).sendKeys("S7963120f21");
 		
 		//Name
-		driver.findElement(By.xpath("(//input[@placeholder='Enter Name'])[1]")).sendKeys("KIMIKO");
+		driver.findElement(By.xpath("(//input[@placeholder='Enter Name'])[1]")).sendKeys("benchlast");
 		
 //		//Screenshot
 //		TakesScreenshot shot=(TakesScreenshot)driver;

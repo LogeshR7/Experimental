@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-06T15:12:56 IST" name="Default suite" finished-at="2024-09-06T15:13:14 IST" duration-ms="18171">
+    <groups>
+    </groups>
+    <test started-at="2024-09-06T15:12:56 IST" name="Default test" finished-at="2024-09-06T15:13:14 IST" duration-ms="18171">
+      <class name="Exprimentes.Stockissue">
+        <test-method signature="stock(java.lang.String,java.lang.String)[pri:0, instance:Exprimentes.Stockissue@4c60d6e9]" started-at="2024-09-06T15:12:56 IST" name="stock" data-provider="logins" finished-at="2024-09-06T15:13:14 IST" duration-ms="18127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[logesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[logesh12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stock -->
+        <test-method signature="stock(java.lang.String,java.lang.String)[pri:0, instance:Exprimentes.Stockissue@4c60d6e9]" started-at="2024-09-06T15:12:56 IST" name="stock" data-provider="logins" finished-at="2024-09-06T15:13:14 IST" duration-ms="17940" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[durai]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Mani1206*]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stock -->
+      </class> <!-- Exprimentes.Stockissue -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
