@@ -5,7 +5,7 @@
     <classes>
       <class name="Exprimentes.Stockissue">
         <methods>
-          <include name="stock" invocation-numbers="0 1"/>
+          <include name="stock" invocation-numbers="0"/>
         </methods>
       </class> <!-- Exprimentes.Stockissue -->
     </classes>

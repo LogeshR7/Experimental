@@ -28,14 +28,14 @@ public class Stockissue {
 		
 	}
 @Test(dataProvider = "logins")
-public void stock(String email,String pass) throws Exception {
+public void stock(String[]datass) throws Exception {
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new ChromeDriver();
 	driver.get("http://haniffakl.asuscomm.com:2311/Demo/");
 	driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	//Login
-			driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(email);
-			driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(pass);
+			driver.findElement(By.xpath("//input[@placeholder='Username']")).sendKeys(datass[0]);
+			driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(datass[1]);
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
 			driver.manage().window().maximize();
 			
@@ -61,18 +61,44 @@ public void stock(String email,String pass) throws Exception {
 			sku.sendKeys(Keys.ENTER);
 			
 			
+			
+			
 			Thread.sleep(2000);
 			//qty'
-			driver.findElement(By.id("quantity")).sendKeys("10");
+			WebElement qty=driver.findElement(By.id("quantity"));
+			qty.sendKeys("10");
 			
 			//add
-			driver.findElement(By.id("salesAddItem")).click();
+			WebElement add=driver.findElement(By.id("salesAddItem"));
+			add.click();
 			Thread.sleep(2000);
-			//save
-			driver.findElement(By.xpath("//button[@title='Save']")).click();
+			
+			//again
+			sku.sendKeys("1000179");
+			Thread.sleep(3000);
+			sku.sendKeys(Keys.DOWN);
+			sku.sendKeys(Keys.ENTER);
+			
+			qty.sendKeys("111");
+			Thread.sleep(2000);
+			add.click();
 			
 			
-	
+			
+			//save(HOLD)
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//button[@value='submit']")).click();
+			
+			
+			  //Show hold list Thread.sleep(2000);
+			  driver.findElement(By.xpath("//button[text()=' Show Hold List']")).click();
+			  
+			  
+			  driver.findElement(By.xpath("//i[@class='fa fa-edit']")).click();
+			  
+			  driver.findElement(By.xpath("(//button[@name='purchase_button'])[2]")).click(
+			  );
+			 
 }
 
 
